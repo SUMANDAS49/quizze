@@ -1,0 +1,43 @@
+.result-more-fifty{
+    height: 100vh;
+    width: 100vw;
+    background-color: purple;
+}
+.result-more-seventy{
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+}
+.result-more-seventy .title{
+    text-align: center;
+    color: red;
+    font-size: 40px;
+}
+.result-more-seventy .overall{
+    text-align: center;
+    color: green;
+}
+.result-more-seventy h3{
+    text-align: center;
+    color:blue;
+}
+.result-more-seventy .image-great{
+    height: 300px;
+    width: 300px;
+  background-image: url('../images/excellent.jpeg');
+  background-size: cover;
+}
+.no-attempt h1{
+    color: red;
+    text-align: center;
+    position: relative;
+    top: 70px;
+}
+.no-attempt .unhappy{
+    height: 400px;
+    width: 300px;
+    background-image: url('../images/unhappy.jpg');
+    position: absolute;
+    top: 220px;
+    right: 0px;
+}

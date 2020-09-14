@@ -1,0 +1,76 @@
+
+
+/* style before start*/
+.before-start{
+    
+    background-color: hotpink;
+    height: 100vh;
+    width: 100vw;
+
+}
+.before-start .rules{
+    height: 250px;
+    width: 90%;
+    background-color: blue;
+    color: hotpink;
+    position: relative;
+    left: 15px;
+    border-radius: 7px;
+}
+.before-start button{
+    height: 50px;
+    width: 90px;
+    font-size: 30px;
+    border-radius: 8px;
+    position: relative;
+    top: 200px;
+    left: 125px;
+    background-color: chartreuse;
+}
+/* style in the main game----------*/
+.main-game{
+    height: 100vh;
+    width: 100vw;
+    background-color: cyan;
+}
+.main-game .timer{
+    height: 50px;
+    width: 100vw;
+    background-color: black;
+    color: crimson;
+    text-align: center;
+    font-size: 30px;
+}
+.main-game .question-answer{
+    height: 500px;
+    width: 100vw;
+    background-color: yellow;
+}
+.main-game .question-answer h2{
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+.main-game .question-answer input{
+    height: 40px;
+    width: 160px;
+    position: relative;
+    top: 100px;
+    left: 90px;
+    font-size: 33px;
+    text-align: center;
+    border-radius: 6px;
+}
+.main-game .question-answer button{
+    height: 40px;
+    width: 120px;
+    font-size: 30px;
+    position: absolute;
+    top: 370px;
+    left: 113px;
+    background-color: tomato;
+    color: white;
+    border-radius: 6px;
+
+}

@@ -1,0 +1,45 @@
+.full-welcome{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: white;
+}
+.intro{
+    width: 100vw;
+    height: 40vh;
+    background-color: darkorange;
+    
+}
+.intro h2{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+.intro h3{
+    position: relative;
+    top: 50px;
+    text-align: center;
+    color:greenyellow;
+    font-size: 30px;
+}
+.image{
+    position: absolute;
+    bottom: 10px;
+    height: 300px;
+    width: 340px;
+    background-image: url(../images/dora.jpg);
+    background-size: cover;
+}
+.full-welcome button{
+    height: 40px;
+    width: 100px;
+    font-size: 30px;
+    background-color: green;
+    color: white;
+    border-radius: 6px;
+    position: relative;
+    left: 120px;
+    top: 40px;
+}
