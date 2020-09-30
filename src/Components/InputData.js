@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import MainScreen from './MainScreen';
 import './CSS/Input.css'
-
+ 
 class InputData extends Component {
     constructor(props){
         super(props)
@@ -39,12 +39,27 @@ class InputData extends Component {
                 <div className="rainbow"></div>
                 <input className="name-input" type="text" onChange={(n)=>this.setName(n)} placeholder="enter your name"/>
                 <input className="age-input" type="number" onChange={(a)=>this.changeAge(a)} placeholder="enter your age"/>
+                <h3 className="h31">Select quiz type</h3>
+                <select className="options1" >
+                    <option>Calculation test</option>
+                    <option>Aptitude test</option>
+                </select>
+                <h3 className="h32">Select quiz duration</h3>
+                <select className="options2" >
+                    <option value="20">20s</option>
+                    <option value="30">30s</option>
+                    <option value="40">40s</option>
+                    <option value="60">1 minutes</option>
+                    <option value="180">3 minutes</option>
+                    <option value="300">5 minutes</option>
+                </select>
+
                 <button onClick={this.displayMain}>enter to the game</button>
                 
             </div>
         )
         }
-        else if(this.state.displayMainScreen && this.state.age>=18)
+        else if(this.state.displayMainScreen && this.state.age>=4)
         {
             return (
                 <div>

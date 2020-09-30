@@ -3,7 +3,7 @@
 /* style before start*/
 .before-start{
     
-    background-color: hotpink;
+    background-color:purple;
     height: 100vh;
     width: 100vw;
 
@@ -11,22 +11,56 @@
 .before-start .rules{
     height: 250px;
     width: 90%;
-    background-color: blue;
-    color: hotpink;
+    
+    color: white;
     position: relative;
     left: 15px;
     border-radius: 7px;
+    animation-name: rules;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes rules{
+    0%{left: -400px;}
+    100%{left: 15px;}
 }
 .before-start button{
     height: 50px;
     width: 90px;
     font-size: 30px;
     border-radius: 8px;
-    position: relative;
-    top: 200px;
+    position: absolute;
+    top: 390px;
     left: 125px;
     background-color: chartreuse;
+    animation-name: buttonAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+
 }
+@keyframes buttonAnimation{
+    0%{height: 0px;width: 0px;font-size: 0px;}
+    100%{height: 50px;width: 90px;font-size: 30px;}
+}
+.ball{
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 144px;
+    top: 450px;
+    animation-name: ball;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes ball{
+    0%{top: 450px;}
+    50%{top: 650px;height: 40px;width: 80px;background-color: tomato;}
+    100%{top: 450px;}
+
+}
+
 /* style in the main game----------*/
 .main-game{
     height: 100vh;

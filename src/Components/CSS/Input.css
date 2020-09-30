@@ -1,6 +1,14 @@
 .body{
     height: 100vh;
     background-color: tomato;
+    animation-name: bodyAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes bodyAnimation{
+    0%{background-color: tomato;}
+    50%{background-color: purple;}
+    100%{background-color: tomato;}
 }
 .body .name-input{
     height: 30px;
@@ -9,7 +17,10 @@
     font-size: 30px;
     position: relative;
     top: 180px;
-    left:22px
+    left:22px;
+    border-style: none;
+    
+    
 }
 .body .age-input{
     height: 30px;
@@ -29,5 +40,35 @@
     left: 49px;
     background-color: greenyellow;
     border-radius: 7px;
+}
+.options1{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    position: absolute;
+    left: 70px;
+    top: 300px;
+}
+.body .h31{
+    font-size: 20px;
+    position: absolute;
+    left: 100px;
+    top: 250px;
+    color: white;
+}
+.options2{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    position: absolute;
+    left: 70px;
+    top: 400px;
+}
+.body .h32{
+    font-size: 20px;
+    position: absolute;
+    left: 83px;
+    top: 350px;
+    color: white;
 }
 

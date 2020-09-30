@@ -27,9 +27,12 @@ class Welcome extends Component {
             <div className="full-welcome">
                 <div className="intro">
                      <h2>Hello and welcome to Quizze</h2>
-                     <h3>Here your child can learn mathematics with fun</h3>
+                     <h4>Here you can boost up your calculation skill based on your age group 
+                     along with calculation skills you cam also bring your aptitude skill to next level
+                     </h4>
                      
-
+                     
+ 
                 </div>
                 
                 <button onClick={this.changeWelcome}>next</button>

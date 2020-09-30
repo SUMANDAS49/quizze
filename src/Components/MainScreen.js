@@ -5,7 +5,7 @@ import './CSS/Main.css'
 class MainScreen extends Component {
     constructor(props){
         super(props)
-        this.state={
+        this.state={ 
             right:0,
             wrong:0,
             a:0,
@@ -103,6 +103,9 @@ class MainScreen extends Component {
                     <h2>1.All questions are addition.</h2>
                     <h2>2.You are given 20 seconds,
                     within 20 seconds you have to write as many answer possible</h2>
+                    </div>
+                    <div className="ball">
+
                     </div>
                     <button onClick={this.setStop}>start</button>
                 </div>
