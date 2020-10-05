@@ -15,14 +15,16 @@ class MainScreen extends Component {
             stop:false,
             start:false,
             name:props.name,
-            time:20,
+            time:parseInt(props.duration),
             accuracy:0,
+            duration:parseInt(props.duration)*1000,
         }
         this.questionGenerator=this.questionGenerator.bind(this)
         this.setResponce=this.setResponce.bind(this)
         this.check=this.check.bind(this)
         this.setStop=this.setStop.bind(this)
         this.timer=this.timer.bind(this)
+        // this.setProps=this.setProps.bind(this)
         
     }
     questionGenerator=()=>{
@@ -35,6 +37,7 @@ class MainScreen extends Component {
 
         
     }
+   
     setStop(){
         this.setState({
             start:true,
@@ -42,15 +45,15 @@ class MainScreen extends Component {
         this.timer()
         setTimeout(()=>{
              this.setState({
-                 stop:true
+                 stop:true  
              })
-        },20000)
+        },(this.state.duration))
         this.questionGenerator()
     }
     timer(){
         setInterval(() => {
             this.setState({
-                time:this.state.time-1,
+                time:parseInt(this.state.time)-1,
                 accuracy:(parseInt(this.state.right)*100)/(parseInt(this.state.right)+parseInt(this.state.wrong))
             })
         }, 1000);
@@ -101,8 +104,8 @@ class MainScreen extends Component {
                     <div className="rules">
                     <h2>Rules:</h2>
                     <h2>1.All questions are addition.</h2>
-                    <h2>2.You are given 20 seconds,
-                    within 20 seconds you have to write as many answer possible</h2>
+                    <h2>2.You are given {this.state.duration} seconds,
+                    within {this.state.duration} seconds you have to write as many answer possible</h2>
                     </div>
                     <div className="ball">
 

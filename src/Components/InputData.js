@@ -10,10 +10,19 @@ class InputData extends Component {
             name:'',
             age:0,
             displayMainScreen:false,
+            duration:0
         }
         this.setName=this.setName.bind(this);
         this.changeAge=this.changeAge.bind(this);
         this.displayMain=this.displayMain.bind(this);
+        this.setDuration=this.setDuration.bind(this);
+    }
+    setDuration(d){
+        console.log(this.state.duration)
+         this.setState({
+             duration:d.target.value,
+         })
+         
     }
     setName(n){
             this.setState({
@@ -45,7 +54,7 @@ class InputData extends Component {
                     <option>Aptitude test</option>
                 </select>
                 <h3 className="h32">Select quiz duration</h3>
-                <select className="options2" >
+                <select className="options2" value={this.state.duration} onChange={(d)=>this.setDuration(d)} >
                     <option value="20">20s</option>
                     <option value="30">30s</option>
                     <option value="40">40s</option>
@@ -63,11 +72,11 @@ class InputData extends Component {
         {
             return (
                 <div>
-                    <MainScreen name={this.state.name}/>
+                    <MainScreen name={this.state.name} duration={this.state.duration}/>
                 </div>
             )
         }
-        else if(this.state.age<18)
+        else if(this.state.age<4)
         {
             return (
                 <div>
