@@ -26,10 +26,8 @@ class Welcome extends Component {
         return (
             <div className="full-welcome">
                 <div className="intro">
-                     <h2>Hello and welcome to Quizze</h2>
-                     <h4>Here you can boost up your calculation skill based on your age group 
-                     along with calculation skills you cam also bring your aptitude skill to next level
-                     </h4>
+                    <h1>QUIZZE</h1>
+                    <h4>A plateform that can help your child to grow in every diraction</h4>
                      
                      
  

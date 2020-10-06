@@ -6,19 +6,25 @@
 }
 .intro{
     width: 100vw;
-    height: 50vh;
-    background-color: darkorange;
+    height: 15vh;
+    background-color: palegreen;
     animation-name: intro;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     
 }
-@keyframes intro{
+/* @keyframes intro{
     0%{background-color: darkorange;}
     25%{background-color: purple;}
     50%{background-color: black;}
     75%{background-color: darkorange;}
     100%{background-color: purple;}
+} */
+.intro h1{
+    
+    position: absolute;
+    top: 20px;
+    left: 120px;
 }
 .intro h2{
     color: white;
@@ -31,24 +37,37 @@
     position: relative;
     top: 50px;
     text-align: center;
-    color:greenyellow;
+    color:white;
     font-size: 20px;
+    background-color: red;
 }
 .image{
     position: absolute;
-    bottom: 10px;
+    top: 150px;
     height: 300px;
     width: 340px;
-    background-image: url(../images/dora.jpg);
+    animation-name: img;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    background-image: url(../images/learn.jpg);
     background-size: cover;
 }
+/* @keyframes img{
+    0%{background-image: url(../images/dora.jpg);}
+    100%{background-image: url(../images/learn.jpg);}
+    100%{background-image: url(../images/dora.jpg);}
+} */
+/* it is circle animation */
+
+
 .full-welcome button{
-    height: 40px;
+    height: 100px;
     width: 100px;
+    
     font-size: 30px;
     background-color: green;
     color: white;
-    border-radius: 6px;
+    border-radius: 50%;
     position:absolute;
     left: 120px;
     top:340px;
@@ -57,7 +76,7 @@
     animation-iteration-count: infinite;
 }
 @keyframes button{
-    0%{width: 100px;left: 230px;}
-    50%{width: 180px;background-color: red;left: 10px;}
-    100%{width: 100px;left: 230px;}
+    0%{top: 340px;}
+    50%{top: 550px; height: 70px;width: 120px;}
+    
 }
