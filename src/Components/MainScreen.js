@@ -104,8 +104,8 @@ class MainScreen extends Component {
                     <div className="rules">
                     <h2>Rules:</h2>
                     <h2>1.All questions are addition.</h2>
-                    <h2>2.You are given {this.state.duration} seconds,
-                    within {this.state.duration} seconds you have to write as many answer possible</h2>
+                    <h2>2.You are given {this.state.duration/1000} seconds,
+                    within {this.state.duration/1000} seconds you have to write as many answer possible</h2>
                     </div>
                     <div className="ball">
 

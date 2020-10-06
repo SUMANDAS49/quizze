@@ -10,7 +10,7 @@ class InputData extends Component {
             name:'',
             age:0,
             displayMainScreen:false,
-            duration:0
+            duration:20
         }
         this.setName=this.setName.bind(this);
         this.changeAge=this.changeAge.bind(this);
